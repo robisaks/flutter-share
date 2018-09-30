@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 package io.flutter.plugins.share;
+import android.util.Log;
 
 import android.content.Intent;
 import android.net.Uri;
