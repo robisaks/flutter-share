@@ -123,6 +123,7 @@ public class SharePlugin implements MethodChannel.MethodCallHandler {
 		} else {
 			shareIntent.putExtra(Intent.EXTRA_TEXT, text);
 		}
+		Log.i("TEST", "type:"+shareType.toString()); 
 		shareIntent.setType(shareType.toString());
 		Intent chooserIntent = Intent.createChooser(shareIntent, null /* dialog title optional */);
 		if (mRegistrar.activity() != null) {
